@@ -14,16 +14,16 @@ const Navbar = () => {
 
     return (
         <div className='px-4 sm:px-6 lg:px-8 mx-auto max-w-[1500px] has-[8vh]'>
-            <div class="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
+            <div className="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
 
-                <div class="text-white text-xl sm:text-2xl">
+                <div className="text-white text-xl sm:text-2xl">
                     <a href='#' className='font-bold'><span>Tyler Knapp</span></a>
                 </div>
-                <ul class="text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-center lg:space-x-10 text-2xl">
-                    <li className='p-2'><NavLink to="/" activeClassName="selected">Home</NavLink></li>
-                    <li className='p-2'><NavLink to="/" activeClassName="text-black">About</NavLink></li>
-                    <li className='p-2'><NavLink to="/" activeClassName="text-black">Portfolio</NavLink></li>
-                    <li className='p-2'><NavLink to="/" activeClassName="text-black">Contact</NavLink></li>
+                <ul className="text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-center lg:space-x-10 text-2xl">
+                    <li className='p-2'><NavLink to="/" activeclassname="selected">Home</NavLink></li>
+                    <li className='p-2'><NavLink to="/" activeclassname="text-black">About me</NavLink></li>
+                    <li className='p-2'><NavLink to="/" activeclassname="text-black">Portfolio</NavLink></li>
+                    <li className='p-2'><NavLink to="/" activeclassname="text-black">Contact</NavLink></li>
                 </ul>
 
                 {/* On small screen, it will be shown */}
@@ -36,10 +36,10 @@ const Navbar = () => {
                         : 'fixed left-[-100%]'}>
                         <h1 className='text-3xl gray-primary-color m-4'>T. Knapp</h1>
                         <ul className='p-8 text-4xl ml-20'>
-                            <li className='p-2'><NavLink to="/" activeClassName="selected">Home</NavLink></li>
-                            <li className='p-2'><NavLink to="/" activeClassName="text-black">About</NavLink></li>
-                            <li className='p-2'><NavLink to="/" activeClassName="text-black">Portfolio</NavLink></li>
-                            <li className='p-2'><NavLink to="/" activeClassName="text-black">Contact</NavLink></li>
+                            <li className='p-2'><NavLink to="/" activeclassname="selected">Home</NavLink></li>
+                            <li className='p-2'><NavLink to="/" activeclassname="text-black">About me</NavLink></li>
+                            <li className='p-2'><NavLink to="/" activeclassname="text-black">Portfolio</NavLink></li>
+                            <li className='p-2'><NavLink to="/" activeclassname="text-black">Contact</NavLink></li>
                         </ul>
 
                     </div>
