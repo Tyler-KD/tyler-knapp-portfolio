@@ -20,6 +20,7 @@ const Navbar = () => {
                     <a href='#' className='font-bold'><span>Tyler Knapp</span></a>
                 </div>
                 <ul className="text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-center lg:space-x-10 text-2xl">
+                    {/* to="/" properties match url paths when NavLinks are clicked */}
                     <li className='p-2'><NavLink to="/hero" activeclassname="selected">Home</NavLink></li>
                     <li className='p-2'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
                     <li className='p-2'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
