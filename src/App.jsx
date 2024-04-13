@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
+        {/* Navbar is displayed on every page because it is outside of Routes tag */}
         <Navbar />
         <Routes>
           <Route index element={<Hero />} />
