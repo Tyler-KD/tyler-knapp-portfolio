@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className="relative pt-16 sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden md:h-[76vh]">
 
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+      <div className="px-6 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-xl mx-auto text-center">
             <h1 className="text-4xl font-bold sm:text-6xl gray-primary-color">
                 Welcome to my Portfolio
