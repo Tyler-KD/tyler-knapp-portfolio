@@ -11,7 +11,7 @@ const Hero = () => {
         setHero(!hero)
     }
   return (
-    <div className="relative pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden h-[100vh]">
+    <div className="relative pt-16 sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden md:h-[76vh]">
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-xl mx-auto text-center">
@@ -20,7 +20,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-5 text-base text-white sm:text-xl">
-                {/* Do you need help in frontend development? Don't hesitate to contact me! */}
+                Do you need help in frontend development? Don't hesitate to contact me!
             </p>
 
             <div onClick={handleHero}>

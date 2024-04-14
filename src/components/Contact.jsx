@@ -17,7 +17,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[92vh]'>
+        <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]'>
             <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 bg-[#223]/30 rounded-3xl'>
                 {/* Contact introduction */}
                 <div className='mb-4'>
