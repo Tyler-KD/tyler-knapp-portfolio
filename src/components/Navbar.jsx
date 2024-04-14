@@ -14,11 +14,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className='px-4 sm:px-6 lg:px-8 mx-auto max-w-[1500px] has-[8vh]'>
-            <div className="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
+        <header className='px-4 sm:px-6 lg:px-8 mx-auto max-w-[1500px] has-[8vh]'>
+            <nav className="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
 
                 <div className="text-white text-xl sm:text-2xl">
-                    <NavLink to="/hero" className='font-bold'><span>Tyler Knapp</span></NavLink>
+                    <NavLink to="/" className='font-bold'><span>Tyler Knapp</span></NavLink>
                 </div>
                 <ul className="text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-center lg:space-x-10 text-2xl">
                     {/* to="/" properties match url paths when NavLinks are clicked */}
@@ -27,6 +27,7 @@ const Navbar = () => {
                     <li className='p-2'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
                     <li className='p-2'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
                     <li className='p-2'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
+                    <li className='p-2'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
                 </ul>
 
                 {/* On small screen, it will be shown */}
@@ -43,15 +44,16 @@ const Navbar = () => {
                             <li className='p-2'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
                             <li className='p-2'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
                             <li className='p-2'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
+                            <li className='p-2'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
                         </ul>
 
                     </div>
 
 
                 </div>
-            </div>
+            </nav>
 
-        </div>
+        </header>
     )
 }
 
