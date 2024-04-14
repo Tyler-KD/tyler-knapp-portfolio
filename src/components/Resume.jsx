@@ -16,12 +16,33 @@ const Resume = () => {
                     <div className="grid md:grid-cols-2">
                         {/* Front-end Proficiencies*/}
                         <div className="my-auto pr-6">
+                            <ul className="list-disc">Front-end Proficiencies
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>ReactJS</li>
+                                <li>Tailwind CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Webpack</li>
+                                <li>jQuery</li>
+                            </ul>
                             
 
                         </div>
 
                         {/* Back-end Proficiencies */}
                         <div className="my-auto pr-6">
+                            <ul className="list-disc">Back-end Proficiencies
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>Ruby on Rails</li>
+
+                            </ul>
 
                         </div>
 

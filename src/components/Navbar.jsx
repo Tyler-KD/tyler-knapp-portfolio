@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className='px-4 sm:px-6 lg:px-8 mx-auto max-w-[1500px] has-[8vh]'>
+        <header className='px-4 sm:px-6 lg:px-8 mx-auto max-w-[1500px] h-[8vh]'>
             <nav className="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
 
                 <div className="text-white text-xl sm:text-2xl">

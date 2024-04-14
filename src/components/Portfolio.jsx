@@ -10,7 +10,7 @@ import { AiFillGithub, AiFillChrome } from 'react-icons/ai';
 
 const Portfolio = () => {
   return (
-    <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[92vh]'>
+    <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 '>
         {/* On small screens and above, there will be 2 grid columns */}
         {/* On mobile screens, there will be default only 1 column */}
         {/* gap-6 between all items */}
