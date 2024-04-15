@@ -8,41 +8,46 @@ import javascriptIcon from '../assets/javascript.png';
 import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
-    const [hero, setHero] = useState(false)
-    const handleHero = () => {
-        setHero(!hero)
-    }
+  const [hero, setHero] = useState(false)
+  const handleHero = () => {
+    setHero(!hero)
+  }
   return (
     <div className="relative pt-16 sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden">
 
       <div className="px-6 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-xl mx-auto text-center">
-            <h1 className="text-4xl font-bold sm:text-6xl gray-primary-color">
-                Welcome to my Portfolio
-            </h1>
+          <h1 className="text-4xl font-bold sm:text-6xl gray-primary-color">
+            Welcome to my Portfolio
+          </h1>
 
-            <p className="mt-5 text-base text-white sm:text-xl">
-                Do you need help in frontend development? Don't hesitate to contact me!
-            </p>
+          <p className="mt-5 text-base text-white sm:text-xl">
+            Do you need help in frontend development? Don't hesitate to contact me!
+          </p>
 
-            <div onClick={handleHero}>
-                <NavLink to="/about" title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110" role="button">
-                    About me
-                </NavLink>
-                <NavLink to="/portfolio" title="" className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white border rounded-lg transition-all duration-200 hover:scale-110" role="button">
-                    View Work
-                </NavLink>
-            </div>
+          <div onClick={handleHero}>
+            <NavLink to="/about" title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110" role="button">
+              About me
+            </NavLink>
+            <NavLink to="/portfolio" title="" className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white border rounded-lg transition-all duration-200 hover:scale-110" role="button">
+              View Work
+            </NavLink>
+          </div>
+
+          {/* Technologies */}
+          <div className="flex flex-row justify-between text-white p-8 max-w-[400px] mx-auto">
+          {/* When hovering, cursor turns to pointer */}
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={reactIcon} alt="React icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={tailwindIcon} alt="Tailwind icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={javascriptIcon} alt="JavaScript icon" />
+        </div>
 
         </div>
+
+
       </div>
 
-      <div className="flex flex-row justify-between text-white p-8 max-w-[400px] mx-auto">
-                {/* When hovering, cursor turns to pointer */}
-                <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={reactIcon} alt="React icon" />
-                <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={tailwindIcon} alt="Tailwind icon" />
-                <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={javascriptIcon} alt="JavaScript icon" />
-            </div>
+
 
       {/* Div to hold images */}
       {/* Can add sm:hidden after block to display images only on mobile */}
