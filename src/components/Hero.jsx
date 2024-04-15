@@ -13,7 +13,8 @@ const Hero = () => {
     setHero(!hero)
   }
   return (
-    <div className="relative pt-16 sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden">
+    // min-h-screen sets minimum height of Main div element to 100 vh (100% of viewport's height)
+    <div className="relative pt-16 min-h-screen sm:pt-16 sm:pb-16 lg:pb-18 overflow-hidden">
 
       <div className="px-6 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-xl mx-auto text-center">
@@ -44,10 +45,7 @@ const Hero = () => {
 
         </div>
 
-
       </div>
-
-
 
       {/* Div to hold images */}
       {/* Can add sm:hidden after block to display images only on mobile */}
