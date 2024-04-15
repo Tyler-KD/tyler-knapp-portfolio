@@ -18,7 +18,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://camwhritenour.github.io/Foodr/" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://camwhritenour.github.io/Foodr/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj1} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
@@ -45,7 +45,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://github.com/Tyler-KD/employee-locator" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://github.com/Tyler-KD/employee-locator" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj2} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
@@ -70,7 +70,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://github.com/Tyler-KD/e-commerce-back-end-object-relational-mapping-orm-" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://github.com/Tyler-KD/e-commerce-back-end-object-relational-mapping-orm-" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj3} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
@@ -95,7 +95,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://tech-wire-3efc7fd046fa.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://tech-wire-3efc7fd046fa.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj4} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
@@ -120,7 +120,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://read-red-and-white-7daadef70c76.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://read-red-and-white-7daadef70c76.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj5} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
@@ -145,7 +145,7 @@ const Portfolio = () => {
 
             <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
-                <a href="https://pwa-just-another-text-editor.onrender.com/" className='group h-48 col-span-3 md:h-80'>
+                <a target="_blank" rel="noreferrer" href="https://pwa-just-another-text-editor.onrender.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
                     <img src={proj6} alt="" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
