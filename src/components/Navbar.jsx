@@ -17,22 +17,22 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-between h-16 lg:h-20 bg-[#223]/30 rounded-b-3xl shadow-lg px-4">
 
-            <div className="text-white text-xl sm:text-2xl">
+            <div className="text-white text-xl sm:text-2xl transition-all duration-200 hover:scale-110">
                 <NavLink to="/" className='font-bold'><span>Tyler Knapp</span></NavLink>
             </div>
             <ul className="text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-center lg:space-x-10 text-2xl">
                 {/* to="/" properties match url paths when NavLinks are clicked */}
                 {/* React NavLink prevents browser refresh when user moves from one page to another */}
-                <li className='p-2'><NavLink to="/hero" activeclassname="selected">Home</NavLink></li>
-                <li className='p-2'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
-                <li className='p-2'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
-                <li className='p-2'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
-                <li className='p-2'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
+                <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/hero" activeclassname="selected">Home</NavLink></li>
+                <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
+                <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
+                <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
+                <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
             </ul>
 
             {/* On small screen, it will be shown */}
             {/* On medium screen and above, it will be hidden */}
-            <div onClick={handleNav} className='block md:hidden text-white z-40'>
+            <div onClick={handleNav} className='block md:hidden text-white z-40 cursor-pointer'>
                 {/* Ternary operator: If nav is true, then AiOutlineClose icon will display. */}
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
 
@@ -40,11 +40,11 @@ const Navbar = () => {
                     : 'fixed left-[-100%]'}>
                     <h1 className='text-3xl gray-primary-color m-4'>T. Knapp</h1>
                     <ul className='p-8 text-4xl ml-20'>
-                        <li className='p-2'><NavLink to="/hero" activeclassname="selected">Home</NavLink></li>
-                        <li className='p-2'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
-                        <li className='p-2'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
-                        <li className='p-2'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
-                        <li className='p-2'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
+                        <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/hero" activeclassname="selected">Home</NavLink></li>
+                        <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/about" activeclassname="text-black">About me</NavLink></li>
+                        <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/portfolio" activeclassname="text-black">Portfolio</NavLink></li>
+                        <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/contact" activeclassname="text-black">Contact</NavLink></li>
+                        <li className='p-2 transition-all duration-200 hover:scale-110'><NavLink to="/resume" activeclassname="text-black">Resume</NavLink></li>
                     </ul>
 
                 </div>

@@ -38,8 +38,8 @@ const Portfolio = () => {
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
                 {/* <a className='transition-all duration-200 hover:scale-110 cursor-pointer'><AiFillGithub className='w-[55px] h-auto'/></a>
                 <a className='transition-all duration-200 hover:scale-110 cursor-pointer'><AiFillChrome className='w-[55px] h-auto'/></a> */}
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub href="https://github.com/camwhritenour/Foodr" alt='' className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>
             </div>
 
@@ -63,8 +63,8 @@ const Portfolio = () => {
                 {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                 {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>
             </div>
 
@@ -88,8 +88,8 @@ const Portfolio = () => {
                 {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                 {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>
             </div>
 
@@ -113,8 +113,8 @@ const Portfolio = () => {
                 {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                 {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>                
             </div>
 
@@ -138,8 +138,8 @@ const Portfolio = () => {
                 {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                 {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>                
             </div>
 
@@ -163,8 +163,8 @@ const Portfolio = () => {
                 {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                 {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                 <div className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                    <AiFillGithub className='w-[55px] h-auto'/>
-                    <AiFillChrome className='w-[55px] h-auto'/>
+                    <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
+                    <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer'/>
                 </div>                
             </div>
 

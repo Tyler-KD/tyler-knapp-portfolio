@@ -38,9 +38,9 @@ const Hero = () => {
           {/* Technologies */}
           <div className="flex flex-row justify-between text-white p-8 max-w-[400px] mx-auto">
           {/* When hovering, cursor turns to pointer */}
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={reactIcon} alt="React icon" />
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={tailwindIcon} alt="Tailwind icon" />
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto' src={javascriptIcon} alt="JavaScript icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto motion-safe:animate-spin' src={reactIcon} alt="React icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-bounce' src={tailwindIcon} alt="Tailwind icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-pulse' src={javascriptIcon} alt="JavaScript icon" />
         </div>
 
         </div>
