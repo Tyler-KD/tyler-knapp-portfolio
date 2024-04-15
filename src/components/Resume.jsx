@@ -4,7 +4,7 @@ const Resume = () => {
     return (
         <div className="pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]">
             {/* Div for Download Resume Button */}
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 bg-[#223]/30 rounded-3xl">
+            <div>
                 <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto">
                     <a href="#" title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110" role="button">
                         Download Resume
@@ -12,12 +12,13 @@ const Resume = () => {
                 </div>
 
                 {/* Form will display in 2 columns on mdeium or larger screens */}
-                <div className="flex justify-center">
-                    <div className="grid md:grid-cols-2">
+                <div className="flex justify-center pt-16">
+                    <div className='px-7 mx-auto grid sm:grid-cols-2 gap-20'>
                         {/* Front-end Proficiencies*/}
-                        <div className="my-auto pr-6">
-                            <ul className="list-disc">Front-end Proficiencies
-                                <li>HTML5</li>
+                        <div className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40  shadow-xl z-1 '>
+                            <h2 className="text-gray-400 font-bold text-3xl p-7">Front-end Proficiencies</h2>
+                            <ul className="list-disc text-gray-200 font-bold text-xl leading-10 mx-8 my-auto p-6">
+                                <li>"HTML5"</li>
                                 <li>CSS3</li>
                                 <li>JavaScript</li>
                                 <li>ReactJS</li>
@@ -26,24 +27,21 @@ const Resume = () => {
                                 <li>Webpack</li>
                                 <li>jQuery</li>
                             </ul>
-                            
-
                         </div>
 
                         {/* Back-end Proficiencies */}
-                        <div className="my-auto pr-6">
-                            <ul className="list-disc">Back-end Proficiencies
-                            <li>JavaScript</li>
-                            <li>SQL</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Mongoose</li>
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>
-                            <li>Ruby on Rails</li>
-
+                        <div className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40 shadow-xl z-1'>
+                            <h2 className="text-gray-400 font-bold text-3xl p-6">Back-end Proficiencies</h2>
+                            <ul className="list-disc text-gray-200 font-bold text-xl leading-10 mx-8 my-auto p-6">
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose</li>
+                                <li>NodeJS</li>
+                                <li>ExpressJS</li>
+                                <li>Ruby on Rails</li>
                             </ul>
-
                         </div>
 
                     </div>
@@ -56,7 +54,7 @@ const Resume = () => {
 
     )
 
-    
+
 }
 
 export default Resume

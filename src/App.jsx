@@ -1,4 +1,4 @@
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
@@ -14,9 +14,8 @@ function App() {
     <BrowserRouter>
       
         {/* Header and Navbar are displayed on every page because they are outside of Routes tag */}
-        {/* <Header /> */}
-        <Navbar />
-
+        <Header />
+        
         <main>
         <Routes>
           <Route index element={<Hero />} />

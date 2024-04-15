@@ -9,12 +9,50 @@ const Contact = () => {
         message: ''
     });
 
+    // State variable errors keeps track of validation errors for each field
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
     // The handleChange function updates the state whenever an input field changes.
+    // The validateField function checks if the value of the field is valid according to rules 
+    // (non empty for name and message, and a regex pattern for email) and returns an error message if it's not.
     // The formData state is then used to populate the mailto: link.
     // mailto: protocol opens the user's default email client with populated data.
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
+        setErrors({ ...errors, [e.target.name]: validateField(e.target.name, e.target.value) });
     };
+
+    const validateField = (name, value) => {
+        switch (name) {
+            case 'name':
+                return value.trim() === '' ? 'Name is required.' : '';
+            case 'email':
+                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return !emailRegex.test(value) ? 'Invalid email address.' : '';
+            case 'message':
+                return value.trim() === '' ? 'Message is required.': '';
+            default:
+                return '';
+        }
+    }
+
+    // export default function App() {
+    //     const [message, setMessage] = useState('');
+    //     const isAnonymous = true;
+
+
+    // const handleClick = (e) => {
+    //     e.currentTarget.disable = true;
+    //     console.log('button clicked');
+    // };
+
+    // const isFormValid = () => {
+    //     return Object.values(errors).every(x => x === '');
+    // };
 
     return (
         <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]'>
@@ -75,24 +113,32 @@ const Contact = () => {
                                         <div className='mx-0 mb-1 sm:mb-4'>
                                             <input type="text" id="name" autoComplete="given-name" placeholder="Your name"
                                                 className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="name" onChange={handleChange} />
+                                                {/* Displays error message when name field is invalid */}
+                                                {errors.name && <p>{errors.name}</p>}
                                         </div>
                                         <div className='mx-0 mb-1 sm:mb-4'>
                                             <input type="email" id="email" autoComplete="email" placeholder="Your email address"
                                                 className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="email" onChange={handleChange} />
+                                                {/* Displays error message when email field is invalid */}
+                                                {errors.email && <p>{errors.email}</p>}
                                         </div>
                                     </div>
                                     <div className='mx-0 mb-1 sm:mb-4'>
                                         <textarea id="message" cols="30" rows="5" placeholder="Write your message..."
                                             className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="message" onChange={handleChange} >
                                         </textarea>
+                                        {/* Displays error message when message field is invalid */}
+                                        {errors.message && <p>{errors.message}</p>}
                                     </div>
                                 </div>
                                 <div className='text-center'>
-                                    <button className='w-full bg-primary-color text-white px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
+                                    <button onClick={handleChange} className='w-full bg-primary-color text-white px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
                                         <a href={`mailto:tyler.kd.knapp@gmail.com?subject=${formData.subject}&body=${formData.body}&name=${formData.name}`}
-                                        >Send Message</a>
+                                        >Click</a>
                                     </button>
+                                                                     
                                 </div>
+                                
                             </form>
                         </div>
                     </div>
