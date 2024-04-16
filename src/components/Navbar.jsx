@@ -35,7 +35,7 @@ const Navbar = () => {
                 {/* Ternary operator: If nav is true, then AiOutlineClose icon will display. */}
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                 
-                <div className={nav ? 'z-30 text-gray-300 fixed h-[60%] left-0 top-0 w-full bg-[#202121] ease-in-out duration-500'
+                <div className={nav ? 'z-30 text-gray-300 fixed left-0 top-0 w-full bg-[#202121] ease-in-out duration-500'
                     : 'fixed left-[-100%]'}>
                     <h1 className='text-3xl gray-primary-color m-4'>T. Knapp</h1>
                     <ul className='p-8 text-4xl ml-20'>
