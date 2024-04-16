@@ -18,60 +18,6 @@ const Contact = () => {
         window.location.href = `mailto:${email}?subject=Contact from ${name}&body=${message}`;
     };
 
-
-    // useState hook manages the formData
-    // const Contact = () => {
-    //     const [formData, setFormData] = useState({
-    //         name: '',
-    //         email: '',
-    //         message: ''
-    //     });
-
-    // State variable errors keeps track of validation errors for each field
-    // const [errors, setErrors] = useState({
-    //     name: '',
-    //     email: '',
-    //     message: ''
-    // });
-
-    // The handleChange function updates the state whenever an input field changes.
-    // The validateField function checks if the value of the field is valid according to rules 
-    // (non empty for name and message, and a regex pattern for email) and returns an error message if it's not.
-    // The formData state is then used to populate the mailto: link.
-    // mailto: protocol opens the user's default email client with populated data.
-    // const handleChange = (e) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value });
-    //     setErrors({ ...errors, [e.target.name]: validateField(e.target.name, e.target.value) });
-    // };
-
-    // const validateField = (name, value) => {
-    //     switch (name) {
-    //         case 'name':
-    //             return value.trim() === '' ? 'Name is required.' : '';
-    //         case 'email':
-    //             const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    //             return !emailRegex.test(value) ? 'Invalid email address.' : '';
-    //         case 'message':
-    //             return value.trim() === '' ? 'Message is required.': '';
-    //         default:
-    //             return '';
-    //     }
-    // }
-
-    // export default function App() {
-    //     const [message, setMessage] = useState('');
-    //     const isAnonymous = true;
-
-
-    // const handleClick = (e) => {
-    //     e.currentTarget.disable = true;
-    //     console.log('button clicked');
-    // };
-
-    // const isFormValid = () => {
-    //     return Object.values(errors).every(x => x === '');
-    // };
-
     return (
         <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 min-h-screen'>
             <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 bg-[#223]/30 rounded-3xl'>
@@ -124,7 +70,7 @@ const Contact = () => {
                         
                         <div className='max-w-6xl p-5 md:p-12' id="form">
                             <h2 className='mb-4 text-2xl font-bold text-gray-300'>Ready to Get Started?</h2>
-                            
+
                             {/* User Contact Form */}
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className='mb-6'>

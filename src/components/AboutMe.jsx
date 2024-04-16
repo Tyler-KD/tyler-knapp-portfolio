@@ -17,9 +17,9 @@ const AboutMe = () => {
                             tech led to a fascination for digital art and post-processing software during my freelance photography.  Eventually, I found my calling in web development and I love it!
                             My hope is to constantly absorb information around me no matter the odds and learn at least one new development subject a day.  Enjoy my page
                             and feel free to contact me.  Let's code together!
-                        </p>
+                        </p>                        
                     </div>
-                    <img className='flex md:absolute mx-auto bottom-[5%] right-[20%] w-[240px] md:w-[400px] h-auto' src="/assets/Photo 10-29-23 Copy.jpg" alt="Portfolio Photo 2" />
+                    <img className='flex md:relative mx-auto bottom-[5%] right-[20%] w-[240px] md:w-[400px] lg:absolute h-auto' src="/assets/Photo 10-29-23 Copy.jpg" alt="Portfolio Photo 2" />                    
                 </div>
             </div>
         </div>
