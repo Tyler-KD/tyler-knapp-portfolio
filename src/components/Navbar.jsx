@@ -34,9 +34,8 @@ const Navbar = () => {
             <div onClick={handleNav} className='block md:hidden text-white z-40 cursor-pointer'>
                 {/* Ternary operator: If nav is true, then AiOutlineClose icon will display. */}
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-
-                {/* overflow-y-auto adds a scrollbar to the dropdown menu when the content overflows the div's height allowing user to scroll through all list items */}
-                <div className={nav ? 'z-30 text-gray-300 fixed h-[50%] left-0 top-0 w-full bg-[#202121] ease-in-out duration-500 overflow-y-auto'
+                
+                <div className={nav ? 'z-30 text-gray-300 fixed h-[60%] left-0 top-0 w-full bg-[#202121] ease-in-out duration-500'
                     : 'fixed left-[-100%]'}>
                     <h1 className='text-3xl gray-primary-color m-4'>T. Knapp</h1>
                     <ul className='p-8 text-4xl ml-20'>
