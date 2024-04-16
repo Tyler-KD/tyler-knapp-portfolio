@@ -1,44 +1,62 @@
 import React, { useState } from 'react';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { useForm } from 'react-hook-form';
 
-// useState hook manages the formData
+// useForm hook from react-hook-form handles form state and validation.
+// The register function from useForm is used to register input fields with validation rules.
+// The errors object contains any validation errors.
+// The handleSubmit function wraps form's submit handler and takes care of form validation upon submission.
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    // onSubmit function is called with the form data.
+    // It destructures the name, email, and message from the form data, and then sets window.location.href 
+    // to a mailto: link with the email, subject, and body filled in.  
+    // This will open the user's default email client with a new email pre-filled with the provided information.
+    const onSubmit = (data) => {
+        const { name, email, message } = data;
+        window.location.href = `mailto:${email}?subject=Contact from ${name}&body=${message}`;
+    };
+
+
+    // useState hook manages the formData
+    // const Contact = () => {
+    //     const [formData, setFormData] = useState({
+    //         name: '',
+    //         email: '',
+    //         message: ''
+    //     });
 
     // State variable errors keeps track of validation errors for each field
-    const [errors, setErrors] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    // const [errors, setErrors] = useState({
+    //     name: '',
+    //     email: '',
+    //     message: ''
+    // });
 
     // The handleChange function updates the state whenever an input field changes.
     // The validateField function checks if the value of the field is valid according to rules 
     // (non empty for name and message, and a regex pattern for email) and returns an error message if it's not.
     // The formData state is then used to populate the mailto: link.
     // mailto: protocol opens the user's default email client with populated data.
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-        setErrors({ ...errors, [e.target.name]: validateField(e.target.name, e.target.value) });
-    };
+    // const handleChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    //     setErrors({ ...errors, [e.target.name]: validateField(e.target.name, e.target.value) });
+    // };
 
-    const validateField = (name, value) => {
-        switch (name) {
-            case 'name':
-                return value.trim() === '' ? 'Name is required.' : '';
-            case 'email':
-                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-                return !emailRegex.test(value) ? 'Invalid email address.' : '';
-            case 'message':
-                return value.trim() === '' ? 'Message is required.': '';
-            default:
-                return '';
-        }
-    }
+    // const validateField = (name, value) => {
+    //     switch (name) {
+    //         case 'name':
+    //             return value.trim() === '' ? 'Name is required.' : '';
+    //         case 'email':
+    //             const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    //             return !emailRegex.test(value) ? 'Invalid email address.' : '';
+    //         case 'message':
+    //             return value.trim() === '' ? 'Message is required.': '';
+    //         default:
+    //             return '';
+    //     }
+    // }
 
     // export default function App() {
     //     const [message, setMessage] = useState('');
@@ -103,42 +121,47 @@ const Contact = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/* User Contact Form */}
+                        
                         <div className='max-w-6xl p-5 md:p-12' id="form">
                             <h2 className='mb-4 text-2xl font-bold text-gray-300'>Ready to Get Started?</h2>
-                            {/* Endpoint for collecting form submission */}
-                            <form >
+                            
+                            {/* User Contact Form */}
+                            <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className='mb-6'>
                                     <div className='mx-0 mb-1 sm:mb-4'>
                                         <div className='mx-0 mb-1 sm:mb-4'>
-                                            <input type="text" id="name" autoComplete="given-name" placeholder="Your name"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="name" onChange={handleChange} />
-                                                {/* Displays error message when name field is invalid */}
-                                                {errors.name && <p>{errors.name}</p>}
+                                            <input {...register("name", { required: "Name is required." })} type="text" id="name" autoComplete="given-name" placeholder="Your name"
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
+                                            {/* Displays error message when name field is invalid */}
+                                            {errors.name && <p>{errors.name.message}</p>}
                                         </div>
                                         <div className='mx-0 mb-1 sm:mb-4'>
-                                            <input type="email" id="email" autoComplete="email" placeholder="Your email address"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="email" onChange={handleChange} />
-                                                {/* Displays error message when email field is invalid */}
-                                                {errors.email && <p>{errors.email}</p>}
+                                            <input {...register("email", {
+                                                required: "Email is required.", pattern: {
+                                                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                                                    message: "Invalid email address."
+                                                }
+                                            })} type="email" id="email" autoComplete="email" placeholder="Your email address"
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
+                                            {/* Displays error message when email field is invalid */}
+                                            {errors.email && <p>{errors.email.message}</p>}
                                         </div>
                                     </div>
                                     <div className='mx-0 mb-1 sm:mb-4'>
-                                        <textarea id="message" cols="30" rows="5" placeholder="Write your message..."
-                                            className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' name="message" onChange={handleChange} >
+                                        <textarea {...register("message", { required: "Message is required." })} id="message" cols="30" rows="5" placeholder="Write your message..."
+                                            className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'>
                                         </textarea>
                                         {/* Displays error message when message field is invalid */}
-                                        {errors.message && <p>{errors.message}</p>}
+                                        {errors.message && <p>{errors.message.message}</p>}
                                     </div>
                                 </div>
                                 <div className='text-center'>
-                                    <button onClick={handleChange} className='w-full bg-primary-color text-white px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
-                                        <a href={`mailto:tyler.kd.knapp@gmail.com?subject=${formData.subject}&body=${formData.body}&name=${formData.name}`}
-                                        >Click</a>
+                                    <button className='w-full bg-primary-color text-white px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
+                                        Send Message
                                     </button>
-                                                                     
+
                                 </div>
-                                
+
                             </form>
                         </div>
                     </div>
@@ -147,6 +170,6 @@ const Contact = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Contact
