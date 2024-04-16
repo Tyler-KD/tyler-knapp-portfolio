@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 // Imported from react-icons/ai
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 // Installed with command npm react-router-dom
 import { NavLink } from 'react-router-dom'
 

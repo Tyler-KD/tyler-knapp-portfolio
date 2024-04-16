@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import notebookL from '../assets/notebookL.png';
-import notebookM from '../assets/notebookM.png';
-import ProPicB5 from '../assets/ProPicB5.png';
-import reactIcon from '../assets/react.png';
-import tailwindIcon from '../assets/tailwind.png';
-import javascriptIcon from '../assets/javascript.png';
 import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
@@ -38,9 +32,9 @@ const Hero = () => {
           {/* Technologies */}
           <div className="flex flex-row justify-between text-white p-8 max-w-[400px] mx-auto">
           {/* When hovering, cursor turns to pointer */}
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto motion-safe:animate-spin' src={reactIcon} alt="React icon" />
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-bounce' src={tailwindIcon} alt="Tailwind icon" />
-          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-pulse' src={javascriptIcon} alt="JavaScript icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto motion-safe:animate-spin' src="/assets/react.png" alt="React icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-bounce' src="/assets/tailwind.png" alt="Tailwind icon" />
+          <img className='transition-all duration-200 hover:scale-110 cursor-pointer w-[70px] h-auto animate-pulse' src="/assets/javascript.png" alt="JavaScript icon" />
         </div>
 
         </div>
@@ -50,9 +44,9 @@ const Hero = () => {
       {/* Div to hold images */}
       {/* Can add sm:hidden after block to display images only on mobile */}
       <div className="relative bottom-0 z-10 flex mx-auto justify-center">
-        <img className="left-[-20px] top-[-20px] sm:left-20 sm:top-[-200px] absolute block w-auto h-[150px] sm:h-[500px]" src={notebookL} alt="Lenovo Laptop" />
-        <img className="absolute sm:relative w-auto bottom-[-110px] right-[-70px] sm:bottom-0 sm:right-0 h-[100px] sm:h-[380px]" src={notebookM} alt="Macbook Laptop" />
-        <img className="right-0 sm:bottom-0 absolute block h-auto w-[800px] sm:w-[900px]" src={ProPicB5} alt="Portfolio Photo" />
+        <img className="left-[-20px] top-[-20px] sm:left-20 sm:top-[-200px] absolute block w-auto h-[150px] sm:h-[500px]" src="/assets/notebookL.png" alt="Lenovo Laptop" />
+        <img className="absolute sm:relative w-auto bottom-[-110px] right-[-70px] sm:bottom-0 sm:right-0 h-[100px] sm:h-[380px]" src="/assets/notebookM.png" alt="Macbook Laptop" />
+        <img className="right-0 sm:bottom-0 absolute block h-auto w-[800px] sm:w-[900px]" src="/assets/ProPicB5.png" alt="Portfolio Photo 1" />
 
       </div>
 

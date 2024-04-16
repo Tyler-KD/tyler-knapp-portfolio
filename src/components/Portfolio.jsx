@@ -1,10 +1,5 @@
 import React from 'react';
-import proj1 from '../assets/Foodr After Screenshot.png';
-import proj2 from '../assets/Employee Locator screenshot (1).png';
-import proj3 from '../assets/E-Commerce Back End Insomnia Core Routes.png';
-import proj4 from '../assets/Tech Wire Homepage.png';
-import proj5 from '../assets/Read Red and White homepage.png';
-import proj6 from '../assets/PWA Just Another Text Editor Registered Service worker.png';
+
 // Import Github and Chrome icons from react-icons
 import { AiFillGithub, AiFillChrome } from 'react-icons/ai';
 
@@ -20,7 +15,7 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://camwhritenour.github.io/Foodr/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj1} alt="Foodr image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/Foodr After Screenshot.png" alt="Foodr image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>
@@ -47,7 +42,7 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://github.com/Tyler-KD/employee-locator" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj2} alt="Employee Locator image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/Employee Locator screenshot (1).png" alt="Employee Locator image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>
@@ -72,14 +67,14 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://github.com/Tyler-KD/e-commerce-back-end-object-relational-mapping-orm-" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj3} alt="All Notes image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/E-Commerce Back End Insomnia Core Routes.png" alt="E-Commerce Back End Object-Relational Mapping (ORM) image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>
                 {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                 <div className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                     <h2 className='text-gray-200 font-bold text-xl leading-10'>
-                        All Notes
+                    E-Commerce Back End Object-Relational Mapping (ORM)
                     </h2>
                     <p className='text-gray-400'>
                     Back end for an e-commerce site built to take a working Express.js API and configure it to use Sequelize to interact with a MySQL database
@@ -97,7 +92,7 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://tech-wire-3efc7fd046fa.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj4} alt="Tech Wire image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/Tech Wire Homepage.png" alt="Tech Wire image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>
@@ -122,7 +117,7 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://read-red-and-white-7daadef70c76.herokuapp.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj5} alt="Read Red and White image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/Read Red and White homepage.png" alt="Read Red and White image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>
@@ -147,7 +142,7 @@ const Portfolio = () => {
                 {/* Anchor element containing image takes 3 out of 8 columns defined on smaller screens and above */}
                 <a target="_blank" rel="noreferrer" href="https://pwa-just-another-text-editor.onrender.com/" className='group h-48 col-span-3 md:h-80'>
                     {/* Group-hover:scale will increase image scale when hover over */}
-                    <img src={proj6} alt="PWA Just Another Text Editor image" className='h-full w-full object-cover object-center transition
+                    <img src="/assets/PWA Just Another Text Editor Registered Service worker.png" alt="PWA Just Another Text Editor image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
 
                 </a>

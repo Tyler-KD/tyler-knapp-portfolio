@@ -1,5 +1,4 @@
 import React from 'react';
-import ProfilePic from '../assets/Photo 10-29-23 Copy.jpg';
 
 const AboutMe = () => {
     return (
@@ -20,7 +19,7 @@ const AboutMe = () => {
                             and feel free to contact me.  Let's code together!
                         </p>
                     </div>
-                    <img className='flex md:absolute mx-auto bottom-[5%] right-[20%] w-[240px] md:w-[400px] h-auto' src={ProfilePic} alt="" />
+                    <img className='flex md:absolute mx-auto bottom-[5%] right-[20%] w-[240px] md:w-[400px] h-auto' src="/assets/Photo 10-29-23 Copy.jpg" alt="Portfolio Photo 2" />
                 </div>
             </div>
         </div>
