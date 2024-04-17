@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
+import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
