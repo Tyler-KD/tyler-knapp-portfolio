@@ -17,8 +17,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/Foodr After Screenshot.png" alt="Foodr image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -31,10 +31,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        {/* <a className='transition-all duration-200 hover:scale-110 cursor-pointer'><AiFillGithub className='w-[55px] h-auto'/></a>
-                <a className='transition-all duration-200 hover:scale-110 cursor-pointer'><AiFillChrome className='w-[55px] h-auto'/></a> */}
-                        <AiFillGithub href="https://github.com/camwhritenour/Foodr" alt='' className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/camwhritenour/Foodr" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://camwhritenour.github.io/Foodr/" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure >
                 </figure>
 
@@ -44,8 +44,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/Employee Locator screenshot (1).png" alt="Employee Locator image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -58,8 +58,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/Tyler-KD/employee-locator" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://github.com/Tyler-KD/employee-locator" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure>
                 </figure>
 
@@ -69,8 +71,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/E-Commerce Back End Insomnia Core Routes.png" alt="E-Commerce Back End Object-Relational Mapping (ORM) image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -83,8 +85,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/Tyler-KD/e-commerce-back-end-object-relational-mapping-orm-" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://github.com/Tyler-KD/e-commerce-back-end-object-relational-mapping-orm-" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure>
                 </figure>
 
@@ -94,8 +98,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/Tech Wire Homepage.png" alt="Tech Wire image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -108,8 +112,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/Tyler-KD/tech-wire" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://tech-wire-3efc7fd046fa.herokuapp.com/" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure>
                 </figure>
 
@@ -119,8 +125,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/Read Red and White homepage.png" alt="Read Red and White image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -133,8 +139,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/Tyler-KD/Read-Red-and-White" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://read-red-and-white-7daadef70c76.herokuapp.com/" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure>
                 </figure>
 
@@ -144,8 +152,8 @@ const Portfolio = () => {
                         {/* Group-hover:scale will increase image scale when hover over */}
                         <img src="/assets/PWA Just Another Text Editor Registered Service worker.png" alt="PWA Just Another Text Editor image" className='h-full w-full object-cover object-center transition
                                                         duration-200 group-hover:scale-110 rounded-lg'/>
-
                     </a>
+                    
                     {/* Div containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
                     <section className='flex flex-col col-span-4 p-4 mx-auto my-auto'>
                         <h5 className='text-gray-200 font-bold text-xl leading-10'>
@@ -158,8 +166,10 @@ const Portfolio = () => {
                     {/* Only 1 column span left for div containing GitHub and Chrome icons */}
                     {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
                     <figure className='flex flex-row justify-between text-white gap-4 mx-auto pb-4'>
-                        <AiFillGithub className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
-                        <AiFillChrome className='w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer' />
+                        <a href="https://github.com/Tyler-KD/PWA-Just-Another-Text-Editor" alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
+                        <a href="https://pwa-just-another-text-editor.onrender.com/" alt="Chrome Icon" target="_blank" rel="noopener noreferrer">
+                            <AiFillChrome className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" /></a>
                     </figure>
                 </figure>
 
