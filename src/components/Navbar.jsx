@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 // Installed with command npm react-router-dom
 import { NavLink } from 'react-router-dom'
 
+// Navbar component that's fixed to the top of the page and allows switching between pages.
 const Navbar = () => {
     // Declaring state nav and function setNav to update nav state
     const [nav, setNav] = useState(false)

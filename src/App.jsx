@@ -1,10 +1,8 @@
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -14,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       
-        {/* Header and Navbar are displayed on every page because they are outside of Routes tag */}
+        {/* Header and inner linked Navbar are displayed on every page because they are outside of Routes tag */}
         <Header />
         
         <main>

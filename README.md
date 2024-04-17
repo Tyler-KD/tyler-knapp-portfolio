@@ -1,207 +1,102 @@
-# 20 React: React Portfolio
+# Tyler Knapp Portfolio
 
-## Your Task
+![GitHub License](https://img.shields.io/badge/license-MIT-default.svg)
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
+## Description
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies.
+Tyler Knapp Portfolio is a professional portfolio using React.  This project was built to practice React skills and join a community of web developers by sharing my projects and work with future employers and fellow developers.  It solves the problem of wanting to view a potential employee's deployed React portfolio of work samples so that an employer can assess whether the developer is a good candidate for an open position.  Some things learned throughout this project were seeing in action the fast responsiveness of React when navigating between pages due to the react-router-dom module, understanding how various imported hooks can handle formData and validation much more effectively than the standard useState hook, making an array of objects in the Portfolio component which are passed as props to the Project component so that React doesn't have repeated code, installing Tailwind CSS giving much faster creative styling control while building up components in real-time, and just overall experiencing the advantages of React for aesthetic details such as transitions and future animations which give the application more character and personality.
 
-You’ll deploy this application to Netlify. Follow the instructions in the Git Guide or consult the [Docs on Netlify](https://vitejs.dev/guide/static-deploy.html#netlify) to create a build that you can deploy.
+## Table of Contents
 
-## User Story
+* [Installation](#installation)
+* [Usage](#usage)
+* [Video](#video)
+* [Deployed Site](#deployed-site)
+* [Credits](#credits)
+* [Contributing](#contributing)
+* [License](#license)
+* [Tests](#tests)
+* [Features](#features)
+* [Questions](#questions)
 
-```md
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
-```
+## Installation
 
-## Acceptance Criteria
+Within the main directory, install dependencies by running "npm i' within the terminal of the main directory.  This will install all the necessary dependencies needed for React and Vite to run as well as integrate Tailwind CSS with React.  Then, connect to the server with the command "npm run start."
 
-```md
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
-WHEN I am presented with the About Me section
-THEN I see a recent photo or avatar of the developer and a short bio about them
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-```
+## Usage
 
-## Mock-Up
+To run this application from the terminal, enter "npm run start" to start the server.  The message "Local: http://localhost:3000" will display within the console.  Vite will instantly start the server using the current working directory as a root.  Once the application is loaded, a homepage will be displayed containing a header, a section of content, and a footer.  Looking at the header, the user is presented with a name and multiple navigation titles corresponding to different sections of the portfolio.  
 
-The following animation shows the web application's appearance and functionality:
+When a navigation title is clicked, then the corresponding section is presented below the navigation without the page reloading the highlighted title.  By default, the portfolio natively loads the landing page with a friendly Hero section of image overlays and navbar links.  When clicking the "About me" title, a recent photo combined with a short bio is displayed.  Within the "Portfolio" section, two grid columns separate multiple deployed applications.  Clicking the image will direct to the deployed site in a separate tab.  Also, clicking the GitHub icon or Chrome icon will direct to a GitHub repository or deployed site respectively.  
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./Assets/20-react-homework-demo-01.gif)
+In the "Contact" section, a contact form with fields for a name, an email address, and a message display.  After all three fields are validated, the "Send Message" button opens the user's default email client with a new email pre-filled with the provided information.  If any of the fields are invalid before clicking "Send Message," then messages will alert the user of the necessary field requirements and the button will be disabled.  Within the "Resume" section, a link to a viewable and downloadable pdf resume headline two columns of Front-end and Back-end proficiencies.  Viewing the footer, LinkedIn and GitHub icons link to the LinkedIn and GitHub profiles respectively.  Finally, a dropdown menu button will display on small screens instead of the navigation titles.  After clicking the button, a dropdown menu will pop-up with navigation titles to every section.
 
-## Getting Started
+For usage instructions with the deployed application using Netlify, follow the previous instructions after the application is loaded.
 
-You’ll use `vite` to build your portfolio, which will include the following:
+**Attached is a screenshot of the application landing page and Hero section:**
 
-* A single `Header` component that appears on multiple pages
 
-* A single `Navigation` component within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
 
-* A single `Project` component that will be used multiple times in the Portfolio section
+## Video
 
-* A single `Footer` component that appears on multiple pages
+N/A
 
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+## Deployed Site
 
-### When you would like to scaffold a new `vite` application on your own, follow these steps
+[Tyler Knapp Portfolio](https://tyler-knapp-portfolio.netlify.app/)
 
-1. In the command line, navigate to the desired parent folder and run `npm create vite`.
+## Credits
 
-    * 🔑 *Note*: This command will automatically create a sub-folder which will house your React application; you do not need to perform a `mkdir` command to create one manually.
+[Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
 
-2. Enter the desired name of your new project folder.
+[link - React](https://react.dev/reference/react-dom/components/link)
 
-3. From the first list of options, select your framework; for our activities in class, we'll be using `React`.
+[How to Create Mailto Links in HTML](https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html)
 
-4. From the second list of options, select your variant; for our activities in class, we'll be using `JavaScript`.
+[React: 2 Ways to Open an External Link in New Tab](https://www.kindacode.com/article/ways-to-open-an-external-link-in-react/)
 
-5. `cd` into your newly created project folder and run `npm install`.
+[Min-Height - Tailwind CSS](https://tailwindcss.com/docs/min-height)
 
-    * In later activities we'll add additional NPM packages to our `vite` apps such as 'bootstrap', 'dotenv', and 'axios'.
+## Contributing
 
-6. Run `npm dev`/`npm run dev` and navigate to the prompted URL to see your app.
+N/A
 
-### Further customization (Recommended)
+## License
 
-1. Navigate to your `package.json` and modify the `scripts` object so that it looks like this example:
+MIT License
 
-```json
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-```
+Copyright (c) 2024 Tyler-KD
 
-* Note the addition of the `"start": "vite"` script.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-2. Navigate to the `vite.config.js` file and edit the export object so that it looks like this example:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-```js
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-    open: true
-  }
-})
-```
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Projects
+* (https://choosealicense.com/licenses/mit/)
 
-For each project that is featured in your portfolio, include the following:
+## Tests
 
-* An image of the deployed application (either a short animated GIF or screenshot)
+N/A
 
-* The title of the project
+## Features
 
-* A link to the deployed application
+react 18.2.0, react-dom 18.2.0, react-hook-form 7.51.3, react-icons 5.0.1, react-router-dom 6.22.3, @types/react 18.2.66,
+@types/react-dom 18.2.22, @vitejs/plugin-react 4.2.1, autoprefixer 10.4.19, eslint 8.57.0, eslint-plugin-react 7.34.1,
+eslint-plugin-react-hooks 4.6.0, eslint-plugin-react-refresh 0.4.6, postcss 8.4.38, tailwindcss 3.4.3, vite 5.2.0
 
-* A link to the corresponding GitHub repository
+## Questions
 
-### Design
-
-As with the previous portfolio Challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
-
-* Use mobile-first design.
-
-* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
-
-* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
-
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application must use React to render content.
-
-  * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-
-  * Application has a single `Project` component that’s used multiple times in the Portfolio section.
-
-  * Application has a single `Footer` component that appears on multiple pages.
-
-  * Application must be deployed to Netlify.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
----
-
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+If you have any questions, please visit [GitHub/Tyler-KD](https://github.com/Tyler-KD) or submit questions to tyler.kd.knapp@gmail.com.

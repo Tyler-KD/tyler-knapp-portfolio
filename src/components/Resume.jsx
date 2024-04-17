@@ -1,6 +1,7 @@
 import React from "react";
 import PDF from "../documentation/Tyler Knapp Resume.pdf"
 
+// Resume component displays the "Download Resume" button, Front-end, and Back-end Proficiencies
 const Resume = () => {
     return (
         <section className="pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]">

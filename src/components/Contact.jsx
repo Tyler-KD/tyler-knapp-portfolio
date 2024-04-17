@@ -4,6 +4,7 @@ import { TbLocationFilled } from 'react-icons/tb';
 import { AiFillSchedule } from 'react-icons/ai';
 import { useForm } from 'react-hook-form';
 
+// Contact component contains useful contact information and a ready to use contact form.
 // useForm hook from react-hook-form handles form state and validation.
 // The register function from useForm is used to register input fields with validation rules.
 // The errors object contains any validation errors.

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Hero component displays a friendly landing page with image overlays, introductory content, and Navbar links
 const Hero = () => {
   const [hero, setHero] = useState(false)
   const handleHero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
           </h3>
           <section>
             <p className="mt-5 text-base text-white sm:text-xl">
-              Do you need help in frontend development? Don't hesitate to contact me!
+              Do you need help in frontend or backend development? Don't hesitate to contact me!
             </p>
           </section>
 

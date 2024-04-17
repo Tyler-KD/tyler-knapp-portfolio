@@ -1,5 +1,6 @@
 import React from 'react';
 
+// AboutMe component contains a short bio paragraph and recent portrait photo
 const AboutMe = () => {
     return (
         <section className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16'>

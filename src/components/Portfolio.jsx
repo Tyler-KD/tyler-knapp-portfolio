@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 
+// Portfolio component displays deployed projects or applications
 const Portfolio = () => {
     // projects is an array of project objects.  
     // Each object in the array is passed as a prop to the Project component,

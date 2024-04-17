@@ -1,7 +1,8 @@
 import React from 'react'
 import { AiFillGithub, AiFillChrome } from 'react-icons/ai'
 
-// Project component renders the project information
+// Project component renders the project information.
+// Each figure element can be used multiple times in the Portfolio section without repeating code.
 const Project = ({ project }) => {
 
     // Optional chaining and ternary operator to check if project.liveLink is defined.
