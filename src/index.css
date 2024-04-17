@@ -5,12 +5,11 @@
 @tailwind utilities;
 
 
-
 body {
     background: rgb(1, 72, 113);
     background: linear-gradient(130deg, rgba(1,72,113,1) 0%, rgba(198,218,208,1) 100%);
     font-family: "Inter", sans-serif;
-}
+}  
 
 span,
     .active {

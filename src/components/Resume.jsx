@@ -3,21 +3,21 @@ import PDF from "../documentation/Tyler Knapp Resume.pdf"
 
 const Resume = () => {
     return (
-        <div className="pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]">
+        <section className="pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[76vh]">
             {/* Div for Download Resume Button */}
-            <div>
-                <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto">
+            <section>
+                <figure className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto">
                     <a target="_blank" rel="noreferrer" href={PDF} title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110 animate-bounce" role="button">
                         Download Resume
                     </a>
-                </div>
+                </figure>
 
                 {/* Form will display in 2 columns on mdeium or larger screens */}
-                <div className="flex justify-center pt-16">
-                    <div className='px-7 mx-auto grid sm:grid-cols-2 gap-20'>
+                <section className="flex justify-center pt-16">
+                    <section className='px-7 mx-auto grid sm:grid-cols-2 gap-20'>
                         {/* Front-end Proficiencies*/}
-                        <div className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40  shadow-xl z-1 '>
-                            <h2 className="text-gray-400 font-bold text-3xl p-7">Front-end Proficiencies</h2>
+                        <section className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40  shadow-xl z-1 '>
+                            <h6 className="text-gray-400 font-bold text-3xl p-7">Front-end Proficiencies</h6>
                             <ul className="list-disc text-gray-200 font-bold text-xl leading-10 mx-8 my-auto p-6">
                                 <li>"HTML5"</li>
                                 <li>CSS3</li>
@@ -28,11 +28,11 @@ const Resume = () => {
                                 <li>Webpack</li>
                                 <li>jQuery</li>
                             </ul>
-                        </div>
+                        </section>
 
                         {/* Back-end Proficiencies */}
-                        <div className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40 shadow-xl z-1'>
-                            <h2 className="text-gray-400 font-bold text-3xl p-6">Back-end Proficiencies</h2>
+                        <section className='mb-4 flex flex-col col-span-1 sm:grid sm:grid-cols-1 rounded-lg bg-black/40 shadow-xl z-1'>
+                            <h6 className="text-gray-400 font-bold text-3xl p-6">Back-end Proficiencies</h6>
                             <ul className="list-disc text-gray-200 font-bold text-xl leading-10 mx-8 my-auto p-6">
                                 <li>JavaScript</li>
                                 <li>SQL</li>
@@ -43,15 +43,15 @@ const Resume = () => {
                                 <li>ExpressJS</li>
                                 <li>Ruby on Rails</li>
                             </ul>
-                        </div>
+                        </section>
 
-                    </div>
+                    </section>
 
-                </div>
+                </section>
 
-            </div>
+            </section>
 
-        </div>
+        </section>
 
     )
 
