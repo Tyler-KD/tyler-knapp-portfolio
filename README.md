@@ -35,7 +35,19 @@ For usage instructions with the deployed application using Netlify, follow the p
 
 **Attached is a screenshot of the application landing page and Hero section:**
 
+![Landing page and Hero Section](/public/assets/React%20Portfolio%20Landing%20page.png)
 
+**Attached is a screenshot of the application About me section:**
+
+![About me section](/public/assets/React%20Portfolio%20-%20About%20me%20section.png)
+
+**Attached is a screenshot of the application Portfolio section:**
+
+![Portfolio section](/public/assets/React%20Portfolio%20-%20Portfolio%20section.png)
+
+**Attached is a screenshot of the application Dropdown Menu on Small Screens:**
+
+![Small Screen Dropdown Menu](/public/assets/React%20Portfolio%20-%20Dropdown%20Menu.png)
 
 ## Video
 
