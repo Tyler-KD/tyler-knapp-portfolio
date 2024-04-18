@@ -80,28 +80,28 @@ const Contact = () => {
                                 <section className='mb-6'>
                                     <section className='mx-0 mb-1 sm:mb-4'>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
-                                            <input {...register("name", { required: "Name is required." })} type="text" id="name" autoComplete="given-name" placeholder="Your name"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'  />
+                                            <input {...register("name", { required: "Name is required!" })} type="text" id="name" autoComplete="given-name" placeholder="Your name"
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
                                             {/* Displays error message when name field is invalid */}
-                                            {errors.name && <p>Name is required!</p>}
+                                            {errors.name && <p>{errors.name.message}</p>}
                                         </fieldset>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
                                             <input {...register("email", {
-                                                required: "Email is required.", pattern: {
+                                                required: "Email is required!", pattern: {
                                                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                                                     message: "Invalid email address."
                                                 }
                                             })} type="email" id="email" autoComplete="email" placeholder="Your email address"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'  />
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
                                             {/* Displays error message when email field is invalid */}
-                                            {errors.email && <p>Email is required!</p>}
+                                            {errors.email && <p>{errors.email.message}</p>}
                                         </fieldset>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
-                                            <textarea {...register("message", { required: "Message is required." })} id="message" cols="30" rows="5" placeholder="Write your message..."
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' >
+                                            <textarea {...register("message", { required: "Message is required!" })} id="message" cols="30" rows="5" placeholder="Write your message..."
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'  >
                                             </textarea>
                                             {/* Displays error message when message field is invalid */}
-                                            {errors.message && <p>Message is required!</p>}
+                                            {errors.message && <p>{errors.message.message}</p>}
                                         </fieldset>
                                     </section>
 
