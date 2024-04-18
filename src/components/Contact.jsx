@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiOutlineMail, AiFillMail } from 'react-icons/ai';
+import React from 'react';
+import { AiFillSchedule, AiFillMail } from 'react-icons/ai';
 import { TbLocationFilled } from 'react-icons/tb';
-import { AiFillSchedule } from 'react-icons/ai';
 import { useForm } from 'react-hook-form';
 
 // Contact component contains useful contact information and a ready to use contact form.
@@ -10,7 +9,9 @@ import { useForm } from 'react-hook-form';
 // The errors object contains any validation errors.
 // The handleSubmit function wraps form's submit handler and takes care of form validation upon submission.
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    // mode is a generic prop of useForm for validation strategy before submitting behaviour.
+    // mode: 'all' triggers validation on both blur and change events.
+    const { register, handleSubmit, formState: { errors } } = useForm({mode:'all'});
 
     // onSubmit function is called with the form data.
     // It destructures the name, email, and message from the form data, and then sets window.location.href 
@@ -56,7 +57,7 @@ const Contact = () => {
                                     <AiFillMail className='w-[70px] h-auto text-gray-300' />
                                     <section className='m-5'>
                                         <h6 className='text-lg font-bold text-gray-200'>Contact</h6>
-                                        <p className='text-gray-400'>Mobile: xxxx</p>
+                                        {/* <p className='text-gray-400'>Mobile: xxxx</p> */}
                                         <p className='text-gray-400'>Mail: tyler.kd.knapp@gmail.com</p>
                                     </section>
                                 </li>
@@ -80,9 +81,9 @@ const Contact = () => {
                                     <section className='mx-0 mb-1 sm:mb-4'>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
                                             <input {...register("name", { required: "Name is required." })} type="text" id="name" autoComplete="given-name" placeholder="Your name"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'  />
                                             {/* Displays error message when name field is invalid */}
-                                            {errors.name && <p>{errors.name.message}</p>}
+                                            {errors.name && <p>Name is required!</p>}
                                         </fieldset>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
                                             <input {...register("email", {
@@ -91,16 +92,16 @@ const Contact = () => {
                                                     message: "Invalid email address."
                                                 }
                                             })} type="email" id="email" autoComplete="email" placeholder="Your email address"
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' />
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'  />
                                             {/* Displays error message when email field is invalid */}
-                                            {errors.email && <p>{errors.email.message}</p>}
+                                            {errors.email && <p>Email is required!</p>}
                                         </fieldset>
                                         <fieldset className='mx-0 mb-1 sm:mb-4'>
                                             <textarea {...register("message", { required: "Message is required." })} id="message" cols="30" rows="5" placeholder="Write your message..."
-                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0'>
+                                                className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0' >
                                             </textarea>
                                             {/* Displays error message when message field is invalid */}
-                                            {errors.message && <p>{errors.message.message}</p>}
+                                            {errors.message && <p>Message is required!</p>}
                                         </fieldset>
                                     </section>
 
