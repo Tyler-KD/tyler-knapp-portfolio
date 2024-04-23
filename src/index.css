@@ -6,24 +6,59 @@
 
 
 body {
-    background: rgb(1, 72, 113);
-    background: linear-gradient(130deg, rgba(1,72,113,1) 0%, rgba(198,218,208,1) 100%);
+    /* background: rgb(1, 72, 113);
+    background: linear-gradient(130deg, rgb(1, 72, 113) 0%, rgba(198, 218, 208, 1) 100%); */
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=de994b&c2=b67b91&gt=l&gd=dbr
+*/
+    /* background: rgba(222, 153, 75, 1.0);
+    background: linear-gradient(315deg, rgba(222, 153, 75, 1.0), rgba(182, 123, 145, 1.0)); */
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=de994b&c2=b67b91&gt=l&gd=dtl
+*/
+    /* background: #de994b;
+background: linear-gradient(315deg, #de994b, #b67b91 100%); */
     font-family: "Inter", sans-serif;
-}  
+}
 
 span,
-    .active {
-        @apply bg-gradient-to-b from-sky-200 to-blue-300 bg-clip-text font-bold text-transparent
+.active {
+    @apply bg-gradient-to-b  from-yellow-200 to-orange-300 bg-clip-text font-bold text-transparent
+}
+
+.dark span,
+.dark .active {
+    @apply bg-gradient-to-b from-sky-200 to-blue-300 bg-clip-text font-bold text-transparent
+}
+
+@layer components {
+    .bg-primary-color {
+        /* background: rgb(126, 67, 0, 1.0); */        
+        background: linear-gradient(130deg, #9A3B3B, #C08261, #E2C799, #F2ECBE);
+        /* background: rgb(123,53,0);
+        background: linear-gradient(130deg, rgba(123,53,0,1) 0%, rgba(219,199,206,1) 100%); */
+        /* background: rgb(126,67,0);
+        background: linear-gradient(130deg, rgba(126,67,0,1) 0%, rgba(219,199,206,1) 100%); */
+        /* background: linear-gradient(130deg, #6A2C70, #B83B5E, #F08A5D, #F9ED69) */
     }
 
-.bg-primary-color {
-    @apply bg-gradient-to-br from-[#014871] to-[#c6dad0];
+    .bg-secondary-color {
+        background: rgb(1, 72, 113);
+        background: linear-gradient(130deg, rgb(1, 72, 113) 0%, rgba(198, 218, 208, 1) 100%)
+    }
 }
+
 
 .active {
     @apply font-bold;
 }
 
-.gray-primary-color {
+.gray-primary-color{
+    @apply bg-gradient-to-b from-white to-amber-100 bg-clip-text font-bold text-transparent
+}
+
+.dark .gray-primary-color {
     @apply bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent
 }

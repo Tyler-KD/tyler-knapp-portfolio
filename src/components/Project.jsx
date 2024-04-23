@@ -19,16 +19,16 @@ const Project = ({ project }) => {
             </a>
             {/* Section containing description paragraph takes 4 columns out of 8 on smaller screens and above */}
             <section className="flex flex-col col-span-4 p-4 mx-auto my-auto">
-                <h5 className="text-gray-200 font-bold text-xl leading-10">
+                <h5 className=" text-stone-100 dark:text-gray-200 font-bold text-xl leading-10">
                     {project.name}
                 </h5>
-                <p className="text-gray-400">
+                <p className=" text-stone-200 dark:text-gray-400">
                     {project.description}
                 </p>
             </section>
             {/* Only 1 column span left for div containing GitHub and Chrome icons */}
             {/* Need flex-row instead of flex-direction so that both icons are displayed next to each other */}
-            <figure className="flex md:flex-col sm:flex-row justify-center text-white gap-4 mx-auto pb-4">
+            <figure className="flex md:flex-col sm:flex-row justify-center text-white dark:text-white gap-4 mx-auto pb-4">
                 <a href={project.githubLink} alt="GitHub Icon" target="_blank" rel="noopener noreferrer">
                     <AiFillGithub className="w-[55px] h-auto transition-all duration-200 hover:scale-110 cursor-pointer" />
                 </a>

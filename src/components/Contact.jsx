@@ -32,7 +32,7 @@ const Contact = () => {
                         <h6 className='mb-4 font-bold tracking-tight gray-primary-color text-3xl sm:text-5xl'>
                             Let's connect
                         </h6>
-                        <p className='mx-auto mt-4 max-w-3xl text-xl text-gray-400'>
+                        <p className='mx-auto mt-4 max-w-3xl text-xl text-stone-200 dark:text-gray-400'>
                             and start working on amazing things
                         </p>
                     </section>
@@ -46,34 +46,34 @@ const Contact = () => {
                         <section className='my-auto pr-6'>
                             <ul>
                                 <li className='flex'>
-                                    <TbLocationFilled className='w-[70px] h-auto text-gray-300' />
+                                    <TbLocationFilled className='w-[70px] h-auto text-stone-100 dark:text-gray-300' />
                                     <section className='m-5'>
-                                        <h6 className='text-lg font-bold text-gray-200'>My Location</h6>
-                                        <p className='text-gray-400'>Houston,</p>
-                                        <p className='text-gray-400'>Texas</p>
+                                        <h6 className='text-lg font-bold text-stone-100 dark:text-gray-200'>My Location</h6>
+                                        <p className='text-stone-200 dark:text-gray-400'>Houston,</p>
+                                        <p className='text-stone-200 dark:text-gray-400'>Texas</p>
                                     </section>
                                 </li>
                                 <li className='flex'>
-                                    <AiFillMail className='w-[70px] h-auto text-gray-300' />
+                                    <AiFillMail className='w-[70px] h-auto text-stone-100 dark:text-gray-300' />
                                     <section className='m-5'>
-                                        <h6 className='text-lg font-bold text-gray-200'>Contact</h6>
-                                        {/* <p className='text-gray-400'>Mobile: xxxx</p> */}
-                                        <p className='text-gray-400'>Mail: tyler.kd.knapp@gmail.com</p>
+                                        <h6 className='text-lg font-bold text-stone-100 dark:text-gray-200'>Contact</h6>
+                                        {/* <p className='text-stone-200 dark:text-gray-400'>Mobile: xxxx</p> */}
+                                        <p className='text-stone-200 dark:text-gray-400'>Mail: tyler.kd.knapp@gmail.com</p>
                                     </section>
                                 </li>
                                 <li className='flex'>
-                                    <AiFillSchedule className='w-[70px] h-auto text-gray-300' />
+                                    <AiFillSchedule className='w-[70px] h-auto text-stone-100 dark:text-gray-300' />
                                     <section className='m-5'>
-                                        <h6 className='text-lg font-bold text-gray-200'>Working</h6>
-                                        <p className='text-gray-400'>Monday - Friday: 8:00 - 17:00</p>
-                                        <p className='text-gray-400'>Saturday &amp; Sunday: 8:00-12:00</p>
+                                        <h6 className='text-lg font-bold text-stone-100 dark:text-gray-200'>Working</h6>
+                                        <p className='text-stone-200 dark:text-gray-400'>Monday - Friday: 8:00 - 17:00</p>
+                                        <p className='text-stone-200 dark:text-gray-400'>Saturday &amp; Sunday: 8:00-12:00</p>
                                     </section>
                                 </li>
                             </ul>
                         </section>
 
                         <section className='max-w-6xl p-5 md:p-12' id="form">
-                            <h6 className='mb-4 text-2xl font-bold text-gray-300'>Ready to Get Started?</h6>
+                            <h6 className='mb-4 text-2xl font-bold text-stone-100 dark:text-gray-300'>Ready to Get Started?</h6>
 
                             {/* User Contact Form */}
                             <form onSubmit={handleSubmit(onSubmit)}>
@@ -108,7 +108,7 @@ const Contact = () => {
                                 </section>
 
                                 <section className='text-center'>
-                                    <button className='w-full bg-primary-color text-white px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
+                                    <button className='w-full bg-primary-color dark:bg-secondary-color font-semibold text-stone-100 px-6 py-3 font-xl rounded-md sm:mb-0 transition-all duration-200 hover:scale-110'>
                                         Send Message
                                     </button>
                                 </section>

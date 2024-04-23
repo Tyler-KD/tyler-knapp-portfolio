@@ -12,7 +12,7 @@ const AboutMe = () => {
                         {/* leading-tight and leading-relaxed affects line height */}
                         <h4 className='text-3xl font-bold leading-tight gray-primary-color sm:text-4xl lg:text-5xl'>Hello, I am <span className='italic'>Tyler Knapp</span></h4>
                         {/* Paragraph for describing me */}
-                        <p className='max-w-lg mt-3 text-xl leading-relaxed text-gray-400 md:mt-8'>
+                        <p className='max-w-lg mt-3 text-xl leading-relaxed text-stone-200 dark:text-gray-400 md:mt-8'>
                             I am a full stack developer with a certificate in full-stack development from Rice University and a Bachelor of Science Degree in Biology from Florida State University.
                             At around the age of 13, I built my first computer.  From that point on, I've been deeply rooted in building and understanding computer components.  This early exposure in
                             tech led to a fascination for digital art and post-processing software during my freelance photography.  Eventually, I found my calling in web development and I love it!

@@ -24,7 +24,7 @@ const Hero = () => {
 
 
           <section onClick={handleHero}>
-            <NavLink to="/about" title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110" role="button">
+            <NavLink to="/about" title="" className="shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color dark:bg-secondary-color rounded-lg transition-all duration-200 hover:scale-110" role="button">
               About me
             </NavLink>
             <NavLink to="/portfolio" title="" className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white border rounded-lg transition-all duration-200 hover:scale-110" role="button">
@@ -49,7 +49,8 @@ const Hero = () => {
       <figure className="relative bottom-0 z-10 flex mx-auto justify-center">
         <img className="left-[-20px] top-[-20px] sm:left-20 sm:top-[-200px] absolute block w-auto h-[150px] sm:h-[500px]" src="/assets/notebookL_1.png" alt="Lenovo Laptop" />
         <img className="absolute sm:relative w-auto bottom-[-110px] right-[-70px] sm:bottom-0 sm:right-0 h-[100px] sm:h-[380px]" src="/assets/notebookM.png" alt="Macbook Laptop" />
-        <img className="right-0 sm:bottom-0 absolute block h-auto w-[800px] sm:w-[900px] " src="assets/PortfolioPicB&W.png" alt="Portfolio Photo 1" />
+        <img className="right-0 sm:bottom-0 absolute block h-auto w-[800px] sm:w-[900px] dark:hidden" src="assets/PortfolioPicB&W-alt.png" alt="Portfolio Pic Light" />
+        <img className="right-0 sm:bottom-0 absolute h-auto w-[800px] sm:w-[900px] hidden dark:block" src="assets/PortfolioPicB&W.png" alt="Portfolio Photo Dark" />
 
       </figure>
 
