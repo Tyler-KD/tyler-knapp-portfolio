@@ -25,7 +25,7 @@ Within the main directory, install dependencies by running "npm i' within the te
 
 ## Usage
 
-To run this application from the terminal, enter "npm run start" to start the server.  The message "Local: http://localhost:3000" will display within the console.  Vite will instantly start the server using the current working directory as a root.  Once the application is loaded, a homepage will be displayed containing a header, a section of content, and a footer.  Looking at the header, the user is presented with a name and multiple navigation titles corresponding to different sections of the portfolio.  
+To run this application from the terminal, enter "npm run start" to start the server.  The message "Local: http://localhost:3000" will display within the console.  Vite will instantly start the server using the current working directory as a root.  Once the application is loaded, a homepage will be displayed containing a header, a theme switch, a section of content, and a footer.  When clicking the theme switch in the upper right-hand corner, the application's color scheme will switch between golden hour and blue hour to simulate the signature warm glow or cooler tones respectively of the time of day.  By default, golden hour mode loads with the application.  Looking at the header, the user is presented with a name and multiple navigation titles corresponding to different sections of the portfolio.
 
 When a navigation title is clicked, then the corresponding section is presented below the navigation without the page reloading the highlighted title.  By default, the portfolio natively loads the landing page with a friendly Hero section of image overlays and navbar links.  When clicking the "About me" title, a recent photo combined with a short bio is displayed.  Within the "Portfolio" section, two grid columns separate multiple deployed applications.  Clicking the image will direct to the deployed site in a separate tab.  Also, clicking the GitHub icon or Chrome icon will direct to a GitHub repository or deployed site respectively.  
 
@@ -33,21 +33,37 @@ In the "Contact" section, a contact form with fields for a name, an email addres
 
 For usage instructions with the deployed application using Netlify, follow the previous instructions after the application is loaded.
 
-**Attached is a screenshot of the application landing page and Hero section:**
+**Attached is a screenshot of the application landing page and Hero section in golden hour mode:**
 
-![Landing page and Hero Section](/public/assets/React%20Portfolio%20Landing%20page.png)
+![Landing page and Hero Section golden hour](/public/assets/React%20Portfolio%20Landing%20page%20-GH.png)
 
-**Attached is a screenshot of the application About me section:**
+**Attached is a screenshot of the application landing page and Hero section in blue hour mode:**
 
-![About me section](/public/assets/React%20Portfolio%20-%20About%20me%20section.png)
+![Landing page and Hero Section blue hour](/public/assets/React%20Portfolio%20Landing%20page%20-BH.png)
 
-**Attached is a screenshot of the application Portfolio section:**
+**Attached is a screenshot of the application About me section in golden hour mode:**
 
-![Portfolio section](/public/assets/React%20Portfolio%20-%20Portfolio%20section.png)
+![About me section golden hour](/public/assets/React%20Portfolio%20-%20About%20me%20section-GH.png)
 
-**Attached is a screenshot of the application Dropdown Menu on Small Screens:**
+**Attached is a screenshot of the application About me section in blue hour mode:**
 
-![Small Screen Dropdown Menu](/public/assets/React%20Portfolio%20-%20Dropdown%20Menu.png)
+![About me section blue hour](/public/assets/React%20Portfolio%20-%20About%20me%20section-BH.png)
+
+**Attached is a screenshot of the application Portfolio section in golden hour mode:**
+
+![Portfolio section golden hour](/public/assets/React%20Portfolio%20-%20Portfolio%20section-GH.png)
+
+**Attached is a screenshot of the application Portfolio section in blue hour mode:**
+
+![Portfolio section blue hour](/public/assets/React%20Portfolio%20-%20Portfolio%20section-BH.png)
+
+**Attached is a screenshot of the application Dropdown Menu on Small Screens in golden hour mode:**
+
+![Small Screen Dropdown Menu golden hour](/public/assets/React%20Portfolio%20-%20Dropdown%20Menu-GH.png)
+
+**Attached is a screenshot of the application Dropdown Menu on Small Screens in blue hour mode:**
+
+![Small Screen Dropdown Menu blue hour](/public/assets/React%20Portfolio%20-%20Dropdown%20Menu-BH.png)
 
 ## Video
 
