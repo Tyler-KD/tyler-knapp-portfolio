@@ -18,8 +18,9 @@ const Contact = () => {
     // to a mailto: link with the email, subject, and body filled in.  
     // This will open the user's default email client with a new email pre-filled with the provided information.
     const onSubmit = (data) => {
-        const { name, email, message } = data;
-        window.location.href = `mailto:${email}?subject=Contact from ${name}&body=${message}`;
+        const { name, message } = data;
+        const myEmail = "tyler.kd.knapp@gmail.com"
+        window.location.href = `mailto:${myEmail}?subject=Contact from ${name}&body=${message}`;
     };
 
     return (
