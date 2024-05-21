@@ -49,6 +49,13 @@ const Portfolio = () => {
             githubLink: "https://github.com/Tyler-KD/PWA-Just-Another-Text-Editor",
             liveLink: "https://pwa-just-another-text-editor.onrender.com/"
         },
+        {
+            name: "devHub",
+            description: "Collaborative MERN stack application serving as a centralized hub for developers to showcase skills, share projects, and engage with enthusiasts",
+            image: "/assets/devHub Homepage.png",
+            githubLink: "https://github.com/Tyler-KD/MyTypeOfDev",
+            liveLink: "https://mytypeofdev-2vjm.onrender.com/"
+        },
     ];
 
     // Map over an array of project objects
